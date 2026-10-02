@@ -18,5 +18,10 @@ public class app {
         // Test isAnagram method
         System.out.println(coreJava1.isAnagram("anagram", "nagaram")); // true
         System.out.println(coreJava1.isAnagram("rat", "car")); // false
+
+        // Test firstUniqChar method
+        System.out.println(coreJava1.firstUniqChar("leetcode")); // 0
+        System.out.println(coreJava1.firstUniqChar("loveleetcode")); // 2
+        System.out.println(coreJava1.firstUniqChar("aabb")); // -1
     }
 }
