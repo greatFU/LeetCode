@@ -51,4 +51,21 @@ public class coreJava1 {
         }
         return -1;
     }
+
+    public static int majorityElement(int[] nums) {
+        int count = 0;
+        int candidat = count;
+        for(int num : nums){
+            if(count == 0){
+                candidat = num;
+            }   
+            if(num != candidat){
+                count--;
+            }else{
+                count++;
+            }
+            
+        }
+        return candidat;
+    }
 }
