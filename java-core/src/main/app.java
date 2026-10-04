@@ -14,7 +14,14 @@ public class app {
        int[] nums5 = {2, 2, 1, 1, 1, 2, 2};
        int[] nums6 = {1};
 
-        // Test containsDuplicate method
+       int[] nums7 = {1,2,3,0,0,0};
+       int[] nums8 = {2,5,6};
+       int[] nums9 = {1};
+       int[] nums10 = {};
+       int[] nums11 = {0};
+       int[] nums12 = {1};
+
+        Test containsDuplicate method
         System.out.println(coreJava1.containsDuplicate(nums1)); // true
         System.out.println(coreJava1.containsDuplicate(nums2)); // false
         System.out.println(coreJava1.containsDuplicate(nums3)); // true
@@ -32,5 +39,14 @@ public class app {
         System.out.println(coreJava1.majorityElement(nums4)); // 3
         System.out.println(coreJava1.majorityElement(nums5)); // 2
         System.out.println(coreJava1.majorityElement(nums6)); // 1
+
+        // Test merge method
+        coreJava1.merge(nums7, 3, nums8, 3); // {1, 2, 2, 3, 5, 6}
+        coreJava1.merge(nums9, 1, nums10, 0); // {1}
+        coreJava1.merge(nums11, 0, nums12, 1); // {1}
+        
+        System.out.println("Merged nums7: " + java.util.Arrays.toString(nums7));
+        System.out.println("Merged nums9: " + java.util.Arrays.toString(nums9));
+        System.out.println("Merged nums11: " + java.util.Arrays.toString(nums11));
     }
 }
